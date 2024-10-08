@@ -1,0 +1,5 @@
+/ouster/metadata:
+  history: keep_last
+  depth: 10
+  reliability: reliable
+  durability: volatile
