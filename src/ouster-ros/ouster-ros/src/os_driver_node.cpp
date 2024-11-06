@@ -64,8 +64,7 @@ class OusterDriver : public OusterSensor {
             get_parameter("use_system_default_qos").as_bool();
         rclcpp::QoS system_default_qos = rclcpp::SystemDefaultsQoS();
         rclcpp::QoS sensor_data_qos = rclcpp::SensorDataQoS();
-        auto selected_qos =
-            use_system_default_qos ? system_default_qos : sensor_data_qos;
+        auto selected_qos = system_default_qos;
 
         auto timestamp_mode = get_parameter("timestamp_mode").as_string();
         auto ptp_utc_tai_offset =

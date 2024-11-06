@@ -51,5 +51,5 @@ ros2 launch ouster_ros sensor.launch.xml sensor_hostname:=<sensor host name>
 ```
 6. Launch DLO
 ```bash
-ros2 launch direct_lidar_odometry dlo.launch.py
+ros2 launch direct_lidar_odometry dlo.launch.py imu_topic:=/ouster/imu pointcloud_topic:=/ouster/points 
 ```
